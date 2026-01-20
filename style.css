@@ -28,3 +28,24 @@ p {
   font-size: 18px;
   color: #333;
 }
+
+/* Smooth animations */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
